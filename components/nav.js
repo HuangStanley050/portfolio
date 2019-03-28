@@ -1,59 +1,49 @@
-import React from 'react'
-import Link from 'next/link'
+import React from "react";
+import Link from "next/link";
+import {
+  Collapse,
+  Navbar,
+  NavbarToggler,
+  NavbarBrand,
+  Nav,
+  NavItem,
+  NavLink,
+  UncontrolledDropdown,
+  DropdownToggle,
+  DropdownMenu,
+  DropdownItem
+} from "reactstrap";
 
-const links = [
-  { href: 'https://github.com/segmentio/create-next-app', label: 'Github' }
-].map(link => {
-  link.key = `nav-link-${link.href}-${link.label}`
-  return link
-})
+const Navigation = () => (
+  <div>
+    <Navbar color="light" light expand="md">
+      <NavbarBrand href="/">reactstrap</NavbarBrand>
+      <NavbarToggler onClick />
+      <Collapse navbar>
+        <Nav className="ml-auto" navbar>
+          <NavItem>
+            <NavLink href="/components/">Components</NavLink>
+          </NavItem>
+          <NavItem>
+            <NavLink href="https://github.com/reactstrap/reactstrap">
+              GitHub
+            </NavLink>
+          </NavItem>
+          <UncontrolledDropdown nav inNavbar>
+            <DropdownToggle nav caret>
+              Options
+            </DropdownToggle>
+            <DropdownMenu right>
+              <DropdownItem>Option 1</DropdownItem>
+              <DropdownItem>Option 2</DropdownItem>
+              <DropdownItem divider />
+              <DropdownItem>Reset</DropdownItem>
+            </DropdownMenu>
+          </UncontrolledDropdown>
+        </Nav>
+      </Collapse>
+    </Navbar>
+  </div>
+);
 
-const Nav = () => (
-  <nav>
-    <ul>
-      <li>
-        <Link prefetch href="/">
-          <a>Home</a>
-        </Link>
-      </li>
-      <ul>
-        {links.map(({ key, href, label }) => (
-          <li key={key}>
-            <Link href={href}>
-              <a>{label}</a>
-            </Link>
-          </li>
-        ))}
-      </ul>
-    </ul>
-
-    <style jsx>{`
-      :global(body) {
-        margin: 0;
-        font-family: -apple-system, BlinkMacSystemFont, Avenir Next, Avenir,
-          Helvetica, sans-serif;
-      }
-      nav {
-        text-align: center;
-      }
-      ul {
-        display: flex;
-        justify-content: space-between;
-      }
-      nav > ul {
-        padding: 4px 16px;
-      }
-      li {
-        display: flex;
-        padding: 6px 8px;
-      }
-      a {
-        color: #067df7;
-        text-decoration: none;
-        font-size: 13px;
-      }
-    `}</style>
-  </nav>
-)
-
-export default Nav
+export default Navigation;
