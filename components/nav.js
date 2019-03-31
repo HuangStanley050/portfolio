@@ -19,32 +19,32 @@ class Navigation extends Component {
     return (
       <div>
         <Navbar color="light" light expand="md">
-          <NavbarBrand href="/">Stanley's Portfolio</NavbarBrand>
+          <NavbarBrand>Stanley's Portfolio</NavbarBrand>
           <NavbarToggler onClick />
           <Collapse navbar>
             <Nav className="ml-auto" navbar>
               <NavItem>
                 <NavLink href="#">
                   {" "}
-                  <Link href="/about">About</Link>
+                  <Link href="/about">
+                    <a>About</a>
+                  </Link>
                 </NavLink>
               </NavItem>
               <NavItem>
                 <NavLink href="#">
-                  <Link href="/projects">Projects</Link>
+                  <Link href="/projects">
+                    <a>Projects</a>
+                  </Link>
                 </NavLink>
               </NavItem>
-              <UncontrolledDropdown nav inNavbar>
-                <DropdownToggle nav caret>
-                  Contacts
-                </DropdownToggle>
-                <DropdownMenu right>
-                  <DropdownItem>Option 1</DropdownItem>
-                  <DropdownItem>Option 2</DropdownItem>
-                  <DropdownItem divider />
-                  <DropdownItem>Reset</DropdownItem>
-                </DropdownMenu>
-              </UncontrolledDropdown>
+              <NavItem>
+                <NavLink href="#">
+                  <Link href="/contact">
+                    <a>Contact</a>
+                  </Link>
+                </NavLink>
+              </NavItem>
             </Nav>
           </Collapse>
         </Navbar>

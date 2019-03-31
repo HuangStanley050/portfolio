@@ -1,13 +1,13 @@
 import React from "react";
 import Nav from "../components/nav";
 
-const About = props => {
+const Contact = () => {
   return (
     <div>
       <Nav />
-      <h1>About</h1>
+      <h1>Contacts</h1>
     </div>
   );
 };
 
-export default About;
+export default Contact;
