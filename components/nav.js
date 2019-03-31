@@ -15,12 +15,18 @@ import {
 } from "reactstrap";
 
 class Navigation extends Component {
+  state = {
+    isOpen: false
+  };
+  toggle = () => {
+    this.setState({ isOpen: !this.state.isOpen });
+  };
   render() {
     return (
       <div>
         <Navbar color="light" light expand="md">
           <NavbarBrand>Stanley's Portfolio</NavbarBrand>
-          <NavbarToggler onClick />
+          <NavbarToggler onClick={this.toggle} />
           <Collapse navbar>
             <Nav className="ml-auto" navbar>
               <NavItem>
