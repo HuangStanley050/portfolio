@@ -14,10 +14,20 @@ const Skills = () => {
           ribeye. Shankle kevin ham hock rump, tenderloin prosciutto cupim
           meatloaf corned beef ball tip.
         </div>
-        <Row style={{ marginTop: "2rem" }}>
-          <Col style={{ display: "flex" }} xs="12" md="4">
+        <Row style={{ marginTop: "3rem" }}>
+          <Col
+            className="form-group"
+            style={{ display: "flex" }}
+            xs="12"
+            md="4"
+          >
             <div className="skills-sub">
-              <h4 style={{ textAlign: "center" }}>Front End</h4>
+              <h4 style={{ marginTop: "1.5rem", textAlign: "center" }}>
+                Front End
+              </h4>
+              <div className="skill-logo-holder">
+                <img src={"../static/icons8-web-64.png"} />
+              </div>
               <ul style={{ listStyleType: "none" }}>
                 <li>
                   <i className="fas fa-star" />
@@ -46,9 +56,19 @@ const Skills = () => {
               </ul>
             </div>
           </Col>
-          <Col style={{ display: "flex" }} xs="12" md="4">
+          <Col
+            className="form-group"
+            style={{ display: "flex" }}
+            xs="12"
+            md="4"
+          >
             <div className="skills-sub">
-              <h4 style={{ textAlign: "center" }}>Back End</h4>
+              <h4 style={{ marginTop: "1.5rem", textAlign: "center" }}>
+                Back End
+              </h4>
+              <div className="skill-logo-holder">
+                <img src={"../static/icons8-server-80.png"} />
+              </div>
               <ul style={{ listStyleType: "none" }}>
                 <li>
                   <i className="fas fa-star" />
@@ -65,9 +85,19 @@ const Skills = () => {
               </ul>
             </div>
           </Col>
-          <Col style={{ display: "flex" }} xs="12" md="4">
+          <Col
+            className="form-group"
+            style={{ display: "flex" }}
+            xs="12"
+            md="4"
+          >
             <div className="skills-sub">
-              <h4 style={{ textAlign: "center" }}>Relevant Skills</h4>
+              <h4 style={{ marginTop: "1.5rem", textAlign: "center" }}>
+                Relevant Skills
+              </h4>
+              <div className="skill-logo-holder">
+                <img src={"../static/icons8-people-64.png"} />
+              </div>
               <ul style={{ listStyleType: "none" }}>
                 <li>
                   <i className="fas fa-star" />
@@ -86,6 +116,7 @@ const Skills = () => {
           </Col>
         </Row>
       </Container>
+
       <style jsx>{`
         .fas.fa-star {
           margin-right: 1rem;
@@ -95,6 +126,18 @@ const Skills = () => {
           border-width: 5px;
           padding: 1rem;
           flex: 1;
+          position: relative;
+        }
+        .skill-logo-holder {
+          position: absolute;
+          width: 80px;
+          height: 80px;
+          top: -40px;
+          left: 40%;
+          textalign: center;
+        }
+        .form-group {
+          margin-bottom: 3rem;
         }
       `}</style>
     </section>

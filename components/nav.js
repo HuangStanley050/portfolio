@@ -27,7 +27,7 @@ class Navigation extends Component {
         <Navbar color="light" light expand="md">
           <NavbarBrand>Stanley's Portfolio</NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
-          <Collapse navbar>
+          <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
               <NavItem>
                 <NavLink href="#">
