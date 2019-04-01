@@ -15,12 +15,7 @@ const Skills = () => {
           meatloaf corned beef ball tip.
         </div>
         <Row style={{ marginTop: "3rem" }}>
-          <Col
-            className="form-group"
-            style={{ display: "flex" }}
-            xs="12"
-            md="4"
-          >
+          <Col style={{ display: "flex", marginBottom: "3rem" }} xs="12" md="4">
             <div className="skills-sub">
               <h4 style={{ marginTop: "1.5rem", textAlign: "center" }}>
                 Front End
@@ -56,12 +51,7 @@ const Skills = () => {
               </ul>
             </div>
           </Col>
-          <Col
-            className="form-group"
-            style={{ display: "flex" }}
-            xs="12"
-            md="4"
-          >
+          <Col style={{ display: "flex", marginBottom: "3rem" }} xs="12" md="4">
             <div className="skills-sub">
               <h4 style={{ marginTop: "1.5rem", textAlign: "center" }}>
                 Back End
@@ -85,12 +75,7 @@ const Skills = () => {
               </ul>
             </div>
           </Col>
-          <Col
-            className="form-group"
-            style={{ display: "flex" }}
-            xs="12"
-            md="4"
-          >
+          <Col style={{ display: "flex", marginBottom: "3rem" }} xs="12" md="4">
             <div className="skills-sub">
               <h4 style={{ marginTop: "1.5rem", textAlign: "center" }}>
                 Relevant Skills
@@ -135,9 +120,6 @@ const Skills = () => {
           top: -40px;
           left: 40%;
           textalign: center;
-        }
-        .form-group {
-          margin-bottom: 3rem;
         }
       `}</style>
     </section>
