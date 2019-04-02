@@ -1,4 +1,5 @@
 import React from "react";
+
 import {
   Container,
   Row,
@@ -7,7 +8,8 @@ import {
   CardImg,
   CardText,
   CardBody,
-  CardTitle
+  CardTitle,
+  Button
 } from "reactstrap";
 
 const Feature = () => {
@@ -25,8 +27,23 @@ const Feature = () => {
                   src="http://via.placeholder.com/640x360"
                 />
                 <CardBody>
-                  <CardTitle>Test</CardTitle>
-                  <CardText>askdfjalkfdalfdkjadfl</CardText>
+                  <CardTitle style={{ textAlign: "center" }}>Test</CardTitle>
+                  <span>
+                    <i className="fas fa-check-square" />
+                    React{" "}
+                  </span>
+                  <span>
+                    <i className="fas fa-check-square" />
+                    Redux{" "}
+                  </span>
+                  <span>
+                    <i className="fas fa-check-square" />
+                    Express{" "}
+                  </span>
+                  <span>
+                    <i className="fas fa-check-square" />
+                    NodeJs{" "}
+                  </span>
                 </CardBody>
               </Card>
             </div>
@@ -40,8 +57,23 @@ const Feature = () => {
                   src="http://via.placeholder.com/640x360"
                 />
                 <CardBody>
-                  <CardTitle>Test</CardTitle>
-                  <CardText>askdfjalkfdalfdkjadfl</CardText>
+                  <CardTitle style={{ textAlign: "center" }}>Test</CardTitle>
+                  <span>
+                    <i className="fas fa-check-square" />
+                    React{" "}
+                  </span>
+                  <span>
+                    <i className="fas fa-check-square" />
+                    Redux{" "}
+                  </span>
+                  <span>
+                    <i className="fas fa-check-square" />
+                    Express{" "}
+                  </span>
+                  <span>
+                    <i className="fas fa-check-square" />
+                    NodeJs{" "}
+                  </span>
                 </CardBody>
               </Card>
             </div>
@@ -55,14 +87,39 @@ const Feature = () => {
                   src="http://via.placeholder.com/640x360"
                 />
                 <CardBody>
-                  <CardTitle>Test</CardTitle>
-                  <CardText>askdfjalkfdalfdkjadfl</CardText>
+                  <CardTitle style={{ textAlign: "center" }}>Test</CardTitle>
+                  <span>
+                    <i className="fas fa-check-square" />
+                    React{" "}
+                  </span>
+                  <span>
+                    <i className="fas fa-check-square" />
+                    Redux{" "}
+                  </span>
+                  <span>
+                    <i className="fas fa-check-square" />
+                    Express{" "}
+                  </span>
+                  <span>
+                    <i className="fas fa-check-square" />
+                    NodeJs{" "}
+                  </span>
                 </CardBody>
               </Card>
             </div>
           </Col>
         </Row>
       </Container>
+      <style jsx>
+        {`
+          span {
+            margin: 0 1rem;
+          }
+        `}
+      </style>
+      <div style={{ marginTop: "2rem" }} className="text-center">
+        <Button>View All Projects</Button>
+      </div>
     </section>
   );
 };
