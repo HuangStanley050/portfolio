@@ -17,35 +17,39 @@ const Contact = () => {
       </div>
       <Container>
         <Row>
-          <div>
-            <img
-              style={{
-                borderColor: "gray",
-                borderStyle: "solid",
-                width: "100px",
-                height: "90px",
-                borderRadius: "50%",
-                margin: "0 auto"
-              }}
-              src={"../static/jinProfile.jpg"}
-            />
-            <p style={{ marginTop: "1rem" }}>
-              Corned beef shankle tri-tip bresaola. Leberkas salami kielbasa,
-              shankle pork loin corned beef shoulder beef ribs hamburger kevin
-              burgdoggen. Jerky short ribs corned beef rump spare ribs shoulder
-              beef pig tail brisket biltong ball tip tri-tip jowl. Flank kevin
-              bresaola, picanha turkey short loin jowl cupim kielbasa sirloin
-              ham ribeye. Kielbasa short loin t-bone, beef ribs jerky tenderloin
-              buffalo biltong turkey porchetta fatback cupim pork frankfurter.
-              Kielbasa ribeye frankfurter ground round pork chop pig pastrami
-              sirloin.
-            </p>
-            <span>
-              <i className="fas fa-phone" />
+          <img
+            style={{
+              borderColor: "gray",
+              borderStyle: "solid",
+              width: "100px",
+              height: "90px",
+              borderRadius: "50%",
+              margin: "0 auto"
+            }}
+            src={"../static/jinProfile.jpg"}
+          />
+          <p style={{ marginTop: "1rem" }}>
+            Corned beef shankle tri-tip bresaola. Leberkas salami kielbasa,
+            shankle pork loin corned beef shoulder beef ribs hamburger kevin
+            burgdoggen. Jerky short ribs corned beef rump spare ribs shoulder
+            beef pig tail brisket biltong ball tip tri-tip jowl. Flank kevin
+            bresaola, picanha turkey short loin jowl cupim kielbasa sirloin ham
+            ribeye. Kielbasa short loin t-bone, beef ribs jerky tenderloin
+            buffalo biltong turkey porchetta fatback cupim pork frankfurter.
+            Kielbasa ribeye frankfurter ground round pork chop pig pastrami
+            sirloin.
+          </p>
+          <div
+            style={{
+              margin: "auto"
+            }}
+          >
+            <span style={{ marginRight: "1rem" }}>
+              <i style={{ margin: "0 5px" }} className="fas fa-phone" />
               contact number: 9999999999
             </span>
             <span>
-              <i className="fas fa-envelope" />
+              <i style={{ margin: "0 5px" }} className="fas fa-envelope" />
               email: huang.stanley050@gmail.com
             </span>
           </div>

@@ -36,7 +36,7 @@ class Navigation extends Component {
               <NavItem>
                 <NavLink href="#">
                   {" "}
-                  <Link href="/about">
+                  <Link href="/">
                     <a>About</a>
                   </Link>
                 </NavLink>

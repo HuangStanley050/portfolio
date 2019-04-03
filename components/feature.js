@@ -13,6 +13,10 @@ import {
 } from "reactstrap";
 
 const Feature = () => {
+  const returnHeight = () => {
+    alert("clicked");
+    console.log("hover");
+  };
   return (
     <section style={{ marginTop: "2rem" }} className="feature-projects">
       <Container>
@@ -82,10 +86,24 @@ const Feature = () => {
             <div>
               <Card>
                 <CardImg
+                  onMouseOver={() => returnHeight.bind(this)}
                   top
                   width="100%"
                   src="http://via.placeholder.com/640x360"
                 />
+                <div
+                  style={{
+                    position: "absolute",
+                    width: "100%",
+                    height: "196px",
+                    border: "solid black",
+                    top: "0",
+                    left: "0",
+                    backgroundColor: "red",
+                    opacity: "0.4"
+                  }}
+                />
+
                 <CardBody>
                   <CardTitle style={{ textAlign: "center" }}>Test</CardTitle>
                   <span>
@@ -113,7 +131,7 @@ const Feature = () => {
       <style jsx>
         {`
           span {
-            margin: 0 1rem;
+            margin: 0 5px;
           }
         `}
       </style>
